@@ -71,6 +71,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         txtResultado.setText("Valor invertdo: "+invertido);
     }
 
+    /*
+    Metodo para invertir una cadena de texto
+    */
+    private void invertirTexto(){
+        String invertido ="";
+        //Metodo en los string que les permite acceder a cada letra de la cadena
+        //y devuelve esa letra como un caracter simple o char
+        for(int i=this.nombre.length()-1;i>=0;i++){
+            invertido += this.nombre.charAt(i);
+        }
+        txtResultado.setText(invertido);
+    }
+
     @Override
     public void onClick(View view) {
         obtenerInformacionUsuario();

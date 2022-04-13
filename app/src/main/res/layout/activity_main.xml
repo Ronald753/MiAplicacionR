@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/purple_200"
     tools:context=".MainActivity">
 
     <EditText
@@ -53,4 +54,15 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+    <Button
+        android:id="@+id/btnProcesarTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Invertir Texto"
+        app:layout_constraintEnd_toEndOf="@+id/btnInvertir"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/btnInvertir"
+        app:layout_constraintTop_toBottomOf="@+id/btnInvertir" />
 </androidx.constraintlayout.widget.ConstraintLayout>
